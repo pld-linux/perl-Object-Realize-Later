@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Object
 %define	pnam	Realize-Later
-Summary:	Object::Realize::Later - Delayed creation of objects
+Summary:	Object::Realize::Later - delayed creation of objects
 Summary(pl):	Object::Realize::Later - opó¼nione tworzenie obiektów
 Name:		perl-Object-Realize-Later
 Version:	0.15
