@@ -8,13 +8,13 @@
 Summary:	Object::Realize::Later - Delayed creation of objects
 Summary(pl):	Object::Realize::Later - opó¼nione tworzenie obiektów
 Name:		perl-Object-Realize-Later
-Version:	0.14
+Version:	0.15
 Release:	1
 # same as perl
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	880f6cdae5e07183b121a6758d7bc159
+# Source0-md5:	d5165034a7cf29c7643456ebec920386
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{!?_without_tests:1}0
@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes
-%dir %{perl_vendorlib}/Object
-%dir %{perl_vendorlib}/Object/Realize
-%{perl_vendorlib}/Object/Realize/*.pm
+%dir %{perl_vendorlib}/%{pdir}
+%dir %{perl_vendorlib}/%{pdir}/Realize
+%{perl_vendorlib}/%{pdir}/Realize/*.pm
 %{_mandir}/man3/*
