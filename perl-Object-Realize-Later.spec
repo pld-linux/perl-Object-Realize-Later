@@ -6,7 +6,7 @@
 %define	pdir	Object
 %define	pnam	Realize-Later
 Summary:	Object::Realize::Later - Delayed creation of objects
-#Summary(pl):	
+Summary(pl):	Object::Realize::Later - opó¼nione tworzenie obiektów
 Name:		perl-Object-Realize-Later
 Version:	0.12
 Release:	1
@@ -29,8 +29,11 @@ on demand realization of object data.  This is related to the tricks
 on autoloading of data, the lesser known cousin of autoloading of
 functionality.
 
-# %description -l pl
-# TODO
+%description -l pl
+Klasa Object::Realize::Later pomaga w implementowaniu przezroczystego
+realizowania danych obiektowych na ¿±danie. Jest to zwi±zane z trikami
+przy automatycznym wczytywaniu danych, czyli mniej znan± pochodn±
+funkcjonalno¶ci automatycznego wczytywania.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -54,5 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes
+%dir %{perl_vendorlib}/Object
+%dir %{perl_vendorlib}/Object/Realize
 %{perl_vendorlib}/Object/Realize/*.pm
 %{_mandir}/man3/*
