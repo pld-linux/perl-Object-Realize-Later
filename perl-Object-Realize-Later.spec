@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Object
-%define	pnam	Realize-Later
+%define		pdir	Object
+%define		pnam	Realize-Later
 Summary:	Object::Realize::Later - delayed creation of objects
 Summary(pl):	Object::Realize::Later - opó¼nione tworzenie obiektów
 Name:		perl-Object-Realize-Later
