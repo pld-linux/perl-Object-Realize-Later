@@ -11,7 +11,7 @@ Name:		perl-Object-Realize-Later
 Version:	0.15
 Release:	1
 # same as perl
-License:	GPL/Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d5165034a7cf29c7643456ebec920386
