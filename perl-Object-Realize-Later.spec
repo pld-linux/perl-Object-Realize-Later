@@ -6,7 +6,7 @@
 %define		pdir	Object
 %define		pnam	Realize-Later
 Summary:	Object::Realize::Later - delayed creation of objects
-Summary(pl.UTF-8):   Object::Realize::Later - opóźnione tworzenie obiektów
+Summary(pl.UTF-8):	Object::Realize::Later - opóźnione tworzenie obiektów
 Name:		perl-Object-Realize-Later
 Version:	0.15
 Release:	2
