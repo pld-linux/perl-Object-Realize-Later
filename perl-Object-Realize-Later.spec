@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Object
 %define		pnam	Realize-Later
+%include	/usr/lib/rpm/macros.perl
 Summary:	Object::Realize::Later - delayed creation of objects
 Summary(pl.UTF-8):	Object::Realize::Later - opóźnione tworzenie obiektów
 Name:		perl-Object-Realize-Later
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ec109cd68b40cf25090cc52b6cfbabaf
+URL:		http://search.cpan.org/dist/Object-Realize-Later/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -25,8 +26,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The Object::Realize::Later class helps with implementing transparent
-on demand realization of object data.  This is related to the tricks
-on autoloading of data, the lesser known cousin of autoloading of
+on demand realization of object data. This is related to the tricks on
+autoloading of data, the lesser known cousin of autoloading of
 functionality.
 
 %description -l pl.UTF-8
